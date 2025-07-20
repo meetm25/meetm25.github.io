@@ -1,0 +1,502 @@
+<!-- \n  Meet Mistry – Personal Resume Website\n  ------------------------------------------------------------------\n  A clean, minimalist, mobile-first resume/portfolio site built with\n  semantic HTML, modern CSS (custom properties, flex/grid), and a tiny\n  sprinkle of JS for interaction. Light theme with light-blue accent.\n  ------------------------------------------------------------------\n  HOW TO USE\n  1. Save the file tree below into a local folder (e.g., meet-mistry-site/).\n  2. Replace placeholder image(s) in /assets/.\n  3. Review all TODO comments and update content where needed.\n  4. Commit & push to GitHub; enable GitHub Pages (instructions in chat).\n  5. Optional: add a custom domain (paid) or stay with free yourname.github.io.\n\n  NOTE: Phone number is currently INCLUDED because it appears on your résumé.\n        If you prefer to hide it (reduce spam), set data-show-phone="false"\n        on the #contact element OR simply remove the phone line in HTML.\n-->
+
+============================
+File: index.html
+============================
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Meet Mistry – Mechanical Engineer</title>
+  <meta name="description" content="Resume & portfolio for Meet Mistry, Mechanical Engineer based in Adelaide, Australia." />
+  <link rel="canonical" href="https://YOUR_GITHUB_USERNAME.github.io/" />
+  <link rel="preload" href="css/style.css" as="style" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script>document.documentElement.classList.remove('no-js');</script>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Meet Mistry – Mechanical Engineer" />
+  <meta property="og:description" content="Resume & project portfolio for Meet Mistry, Mechanical Engineer in Adelaide, SA." />
+  <meta property="og:url" content="https://YOUR_GITHUB_USERNAME.github.io/" />
+  <meta property="og:image" content="https://YOUR_GITHUB_USERNAME.github.io/assets/meet-mistry-og.jpg" />
+  <meta property="og:image:alt" content="Portrait of Meet Mistry" />
+
+  <!-- Twitter Card (falls back to OG if not provided) -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Meet Mistry – Mechanical Engineer" />
+  <meta name="twitter:description" content="Resume & project portfolio for Meet Mistry." />
+  <meta name="twitter:image" content="https://YOUR_GITHUB_USERNAME.github.io/assets/meet-mistry-og.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="alternate icon" type="image/png" href="assets/favicon-32.png" sizes="32x32" />
+
+  <!-- JSON-LD Person Schema -->
+  <script type="application/ld+json" id="ld-person">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Meet Mistry",
+    "jobTitle": "Mechanical Engineer",
+    "email": "mailto:meetmistry25@gmail.com",
+    "telephone": "+61-450-766-278",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Adelaide",
+      "addressRegion": "SA",
+      "addressCountry": "AU"
+    },
+    "url": "https://www.linkedin.com/in/meet-mistry-b7511365/",
+    "sameAs": ["https://www.linkedin.com/in/meet-mistry-b7511365/"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="branding">
+        <img src="assets/meet-mistry.jpg" alt="Meet Mistry portrait" class="avatar" />
+        <div>
+          <h1 class="site-title">Meet Mistry</h1>
+          <p class="site-tagline">Mechanical Engineer</p>
+        </div>
+      </div>
+      <nav class="site-nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu">Menu</button>
+        <ul id="primary-menu" class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <!-- ABOUT / SUMMARY -->
+    <section id="about" class="section about">
+      <div class="container">
+        <h2>About</h2>
+        <p>Results-driven engineer with over 6 years of experience across structural construction steel, oil &amp; gas, and process equipment manufacturing sectors, currently applying technical expertise in structural construction steel production at Brice Metals, Australia. Skilled in project management, manufacturing, design, ASME/ISO compliance, and process/product optimization. Holds a master’s in Project Management and excels at managing project lifecycles from planning to completion within strict safety, cost, and time parameters.</p>
+        <p><a class="btn primary" href="assets/Meet_D.pdf" download>Download Résumé (PDF)</a></p>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section experience">
+      <div class="container">
+        <h2>Experience</h2>
+
+        <article class="job">
+          <header>
+            <h3>Machinist / Technician</h3>
+            <p><span class="org">Brice Metals</span> · Adelaide, SA · Oct 2023 – Present</p>
+          </header>
+          <ul>
+            <li>Aiding structural steel manufacturing for sections produced to AS/NZS 3679.1, 3679.2, 4100 &amp; 1163 for bridge, warehouse and railway projects.</li>
+            <li>Ensured design compliance to client requirements; performed preventive maintenance to reduce equipment downtime.</li>
+            <li>Recorded &amp; reported non‑conformities to meet construction standards and QA expectations.</li>
+            <li>Assessed risks; coordinated schedules and material intake for on‑time completion.</li>
+            <li>Collaborated across design, production, and safety teams; updated ERP with daily progress data.</li>
+            <li>Trained 3 new hires in mechanical ops, material management, preventive maintenance &amp; OH&amp;S.</li>
+          </ul>
+        </article>
+
+        <article class="job">
+          <header>
+            <h3>Senior Engineer</h3>
+            <p><span class="org">Bectochem Consultants &amp; Engineers Pvt Ltd</span> · India · Nov 2018 – Oct 2019</p>
+          </header>
+          <ul>
+            <li>Designed, customized &amp; implemented high‑containment isolator systems (dispensing, sampling, aseptic, flexible glove‑bag, charging) via DEC‑Bectochem JV.</li>
+            <li>Supported engineering development with analysis &amp; simulation of prototypes and 3D models.</li>
+            <li>Drove product improvements with DEC teams; reduced fabrication errors by ~15%.</li>
+            <li>Tested prototypes for containment performance; safeguarded quality, schedule &amp; cost.</li>
+          </ul>
+        </article>
+
+        <article class="job">
+          <header>
+            <h3>Design Engineer</h3>
+            <p><span class="org">HLE Glascoat Ltd</span> · India · Nov 2015 – Oct 2018</p>
+          </header>
+          <ul>
+            <li>Designed &amp; upgraded agitated nutsche filters* and rotary vacuum paddle dryers to ASME/CE codes &amp; ISO standards.</li>
+            <li>Engineered heating/cooling medium &amp; fabrication process modifications for filter/dryer line; saved ~AUD 180K annually.</li>
+            <li>Developed U‑stamp certified pressure vessel for Apotex Fermentation (Winnipeg, Canada) incl. pressure calcs documentation (P&amp;ID, GA, JCA).</li>
+            <li>Ran PV Elite analyses to verify design pressure &amp; integrity of process equipment.</li>
+            <li>Managed multiple concurrent projects to meet timeline, cost &amp; quality targets.</li>
+            <li>Mentored 5 new recruits on design, standards &amp; manufacturing constraints.</li>
+          </ul>
+          <p class="note">*Spelling standardized: "nutsche" filter.</p>
+        </article>
+
+        <article class="job">
+          <header>
+            <h3>Site Engineer</h3>
+            <p><span class="org">Brahma Gears</span> · India · Aug 2014 – Nov 2015</p>
+          </header>
+          <ul>
+            <li>Led day‑to‑day production for ~22 trades (fitters, welders, operators) to hit output targets.</li>
+            <li>Planned maintenance; cut machine downtime by ~1 shift/month.</li>
+            <li>Liaised with clients to maintain gearbox parameters &amp; design conformance.</li>
+            <li>Maintained inventory levels to support uninterrupted production schedules.</li>
+          </ul>
+        </article>
+
+        <article class="job">
+          <header>
+            <h3>Sales Operations &amp; Service (Various Roles)</h3>
+            <p>Australia · Nov 2019 – Sep 2023</p>
+          </header>
+          <ul>
+            <li>Resolved customer issues, provided tailored solutions and consistently met/exceeded sales targets.</li>
+            <li>Sharpened communication, problem‑solving &amp; service skills in client‑facing settings.</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2>Projects</h2>
+
+        <article class="project">
+          <h3>Filter/Dryer Heating &amp; Fabrication Optimization</h3>
+          <p>Redesigned heating/cooling medium routing and fabrication steps for a filter/dryer product line, resolving chronic reliability and manufacturing issues and delivering ~AUD 180K annual savings.</p>
+        </article>
+
+        <article class="project">
+          <h3>Rotary Shaft Whirl &amp; Resonance Study</h3>
+          <p>Undergraduate capstone: built a dual‑axis oscillation rig with variable drive to analyze shaft whirling behavior at multiple speeds; identified resonant frequency bands and documented deflection with high‑speed photography.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <ul class="skill-list">
+          <li>MS Office Suite</li>
+          <li>PMBOK (Project Mgmt)</li>
+          <li>AutoCAD</li>
+          <li>Solid Edge</li>
+          <li>PV Elite</li>
+          <li>GD&T</li>
+          <li>ASME / ISO Compliance</li>
+          <li>Manufacturing Processes</li>
+        </ul>
+
+        <h3>Certifications</h3>
+        <ul class="cert-list">
+          <li>Construction White Card</li>
+          <li>Forklift License</li>
+          <li>Bridge &amp; Gantry Crane License</li>
+          <li>AutoCAD Certificate</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact" data-show-phone="true">
+      <div class="container">
+        <h2>Contact</h2>
+        <ul class="contact-list">
+          <li><strong>Email:</strong> <a data-email-obf href="#">[enable email]</a></li>
+          <li class="phone"><strong>Phone:</strong> <span>+61 450 766 278</span></li>
+          <li><strong>Location:</strong> Adelaide, SA, Australia</li>
+          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/meet-mistry-b7511365/" target="_blank" rel="noopener">View Profile</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Meet Mistry. Built with HTML, CSS &amp; JS. Hosted on GitHub Pages.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
+
+
+============================
+File: css/style.css
+============================
+/* ------------------------------------------------------------------
+   Meet Mistry Resume Site Styles
+   Light minimalist theme w/ light-blue accent.
+   ------------------------------------------------------------------ */
+
+:root {
+  --accent: #4aa3ff; /* light blue */
+  --accent-hover: #1c82ff;
+  --bg: #ffffff;
+  --bg-alt: #f5f7fa;
+  --text: #1a1a1a;
+  --text-light: #555;
+  --border: #d9e2ec;
+  --radius: 8px;
+  --max-width: 60rem;
+  --font-base: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1b1d1f;
+    --bg-alt: #25282c;
+    --text: #ffffff;
+    --text-light: #cbd2d9;
+    --border: #3e4c59;
+    --accent: #4aa3ff;
+    --accent-hover: #82c0ff;
+  }
+}
+
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: var(--font-base);
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; height: auto; }
+a { color: var(--accent); text-decoration: none; }
+a:hover, a:focus { color: var(--accent-hover); text-decoration: underline; }
+
+h1, h2, h3 { line-height: 1.2; margin-top: 0; }
+.section h2 { margin-bottom: 0.5em; border-bottom: 2px solid var(--accent); display: inline-block; padding-bottom: 0.1em; }
+
+.container {
+  width: min(100% - 2rem, var(--max-width));
+  margin-inline: auto;
+  padding-block: 2.5rem;
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 1rem;
+  background: var(--accent);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  z-index: 100;
+  transition: top 0.2s;
+}
+.skip-link:focus { top: 1rem; }
+
+/* Header */
+.site-header {
+  background: var(--bg-alt);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 0.75rem;
+}
+.branding {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent);
+}
+.site-title { font-size: 1.25rem; margin: 0; }
+.site-tagline { margin: 0; font-size: 0.95rem; color: var(--text-light); }
+
+.site-nav {
+  position: relative;
+}
+.nav-toggle {
+  display: none;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 600px) {
+  .nav-toggle { display: inline-block; }
+  .nav-list {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    flex-direction: column;
+    padding: 0.5rem 1rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s ease-out;
+  }
+  .nav-list.open { max-height: 500px; }
+}
+
+/* Sections */
+.section { border-bottom: 1px solid var(--border); }
+.section:last-of-type { border-bottom: none; }
+
+.section.about p { max-width: 50ch; }
+
+.experience .job { margin-bottom: 2rem; }
+.experience .job header p { margin: 0.25rem 0 0 0; color: var(--text-light); font-size: 0.95rem; }
+.experience .job ul { margin-top: 0.5rem; }
+
+.projects .project { margin-bottom: 2rem; }
+.projects .project h3 { margin-bottom: 0.25rem; }
+
+.skills .skill-list,
+.skills .cert-list { columns: 2; column-gap: 2rem; list-style: square inside; margin: 0; padding: 0; }
+.skills .skill-list li,
+.skills .cert-list li { margin: 0.25rem 0; break-inside: avoid; }
+
+.contact .contact-list { list-style: none; margin: 0; padding: 0; }
+.contact .contact-list li { margin: 0.5rem 0; }
+.contact .contact-list a { word-break: break-all; }
+.contact .phone { display: list-item; }
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.25rem;
+  border-radius: var(--radius);
+  border: 2px solid var(--accent);
+  font-weight: 600;
+  line-height: 1.2;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btn.primary {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+.btn.primary:hover,
+.btn.primary:focus {
+  background: var(--accent-hover);
+  border-color: var(--accent-hover);
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--text-light);
+  background: var(--bg-alt);
+  border-top: 1px solid var(--border);
+  padding-block: 2rem;
+}
+
+/* Print Styles ---------------------------------------------------- */
+@media print {
+  body { color: #000; background: #fff; }
+  .site-header, .site-nav, .nav-toggle, .skip-link { display: none !important; }
+  .btn { display: none !important; }
+  .section { border: none; padding-block: 1rem; }
+  .container { width: 100%; margin: 0; padding: 0; }
+  .avatar { width: 72px; height: 72px; }
+  a[href]:after { content: " (" attr(href) ")"; font-size: 0.8em; }
+}
+
+
+============================
+File: js/main.js
+============================
+/* ------------------------------------------------------------------
+   Meet Mistry Resume Site Scripts
+   ------------------------------------------------------------------ */
+(function(){
+  // Mobile nav toggle
+  const toggle = document.querySelector('.nav-toggle');
+  const menu = document.querySelector('#primary-menu');
+  if (toggle && menu) {
+    toggle.addEventListener('click', function(){
+      const expanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', String(!expanded));
+      menu.classList.toggle('open');
+    });
+  }
+
+  // Email obfuscation: reduce spam bots by constructing mailto at runtime
+  const emailLink = document.querySelector('[data-email-obf]');
+  if (emailLink) {
+    const user = 'meetmistry25';
+    const domain = 'gmail.com';
+    const addr = user + '@' + domain;
+    emailLink.textContent = addr;
+    emailLink.href = 'mailto:' + addr;
+  }
+
+  // Optional: hide phone if data-show-phone=false on #contact
+  const contact = document.querySelector('#contact');
+  if (contact) {
+    const show = contact.getAttribute('data-show-phone');
+    if (show === 'false') {
+      const phoneLi = contact.querySelector('.phone');
+      if (phoneLi) phoneLi.remove();
+    }
+  }
+
+  // Current year in footer
+  const yearEl = document.getElementById('year');
+  if (yearEl) {
+    yearEl.textContent = new Date().getFullYear();
+  }
+})();
+
+
+============================
+File: assets/placeholder-notes.txt
+============================
+Put your site assets (headshot photo, favicon, PDF resume) in this folder and update the paths in index.html accordingly.
+
+Required / recommended assets:
+- meet-mistry.jpg              (400x400px square headshot; will be auto-cropped round)
+- meet-mistry-og.jpg           (1200x630 share image for social; can reuse headshot on light bg)
+- favicon.svg                  (simple MM initials or gear icon)
+- favicon-32.png               (fallback)
+- Meet_D.pdf                   (your résumé PDF for download button)
+
+You can export these from Canva, Figma, or any image editor. Keep file names lowercase, no spaces.
+
+-- End -->
